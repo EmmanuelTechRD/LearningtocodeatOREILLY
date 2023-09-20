@@ -12,30 +12,73 @@
     <h1>Student Admission Form</h1>
 
     <form action="backend.php">
+        <label for="studentName">Name:</label>
         <div>
-            Name: <input type="text" name="studentName" id="" placeholder="e.g. Emmanuel Soto.">
+            <input type="text" name="studentName" id="studentName" placeholder="e.g. Emmanuel Soto.">
         </div>
         <br>
 
+        <label for="studentContactNumber">Contact Number:</label>
         <div>
-            Contact Number: <input type="tel" name="studentContactNumber" id="" placeholder="e.g. 1 829-555-0102">
+            <input type="tel" name="studentContactNumber" id="studentContactNumber" placeholder="e.g. 1 829-555-0102">
         </div>
         <br>
 
+        <label for="studentEmail">Email:</label>
         <div>
-            Email: <input type="email" name="studentEmail" id="" placeholder="e.g. forexample@mail.com">
+            <input type="email" name="studentEmail" id="studentEmail" placeholder="e.g. forexample@mail.com">
         </div>
         <br>
 
+        <label for="studentProposal">Tell us about you:</label>
         <div>
-            <textarea name="studentProposal" id="" cols="35" rows="7"
+            <textarea name="studentProposal" id="studentProposal" cols="35" rows="7"
                 placeholder="Tell us why you? 
 e.g. Because I've always been a passionate for technology and I really believe that with this opportunity I'll be able to discover my bigger potential."></textarea>
         </div>
+        <br>
+
+        <label for="studentGender">Gender:</label>
+        <div>
+            Male <input type="radio" name="studentGender" id="studentGender"> Female <input type="radio" name="studentGender" id="">
+        </div>
+        <br>
+
+        <div>
+            Please provide us with your date of birthday: <input type="date" name="studentdateofBirthday" id="">
+        </div>
+        <br>
+
+        <div>
+            Upload a profile image, so we can see who you are: <input type="file" name="studentprofilePicture" id="" accept="image/*">
+        </div>
+        <br>
+        
+        What's your residential address? <br> <textarea name="studentresidentialAddress" id="" cols="60" rows="3"></textarea>
+        <br>
+        <br>
+
+        Which web dev would you like to be? <select name="devOptions" id="">
+            <option value="">FrontEnd</option>
+            <option value="">BackEnd</option>
+            <option value="" selected>FullStack</option>
+        </select>
+        <br>
+        <br>
+
+        <div>
+            Do you accept our terms and conditions? <input type="checkbox" name="termsandconditionsCheck" id=""> <br>
+            Do you want us to coordinate a guided visit through our campus? <input type="checkbox" name="visittocampusCheck" id="" checked>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit Form.">
+        <input type="reset" value="Start again.">
+        <!-- <input type="button" value=""> -->
     </form>
+    
     <br>
     <hr>
-
     <!-- Link to the main "Index.html" page -->
     <a href="/FullStack_Web_Dev_Course with Prerak Mehta/index.html" target="_blank">Go back to the main page.</a>
 </body>
