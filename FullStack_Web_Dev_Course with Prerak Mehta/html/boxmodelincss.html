@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in CSS</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            border: 2px solid black;
+            /* margin: 20px; */
+            /* margin-top: 20px; */
+            /* margin-left: 20px; */
+            /* Short way to change the top-bottom and left-right margin. */
+            /* margin: 20px 40px; */
+            /* The short being-more-explicit way to change the margin. */
+            margin: 40px 20px 50px 30px;
+            /* padding: 20px; */
+            /* padding-top: 20px;
+            padding-left: 20px; */
+            /* Short way to change the top-bottom and left-right padding. */
+            /* padding: 10px 20px; */
+            /* The short being-more-explicit way to change the padding. */
+            padding: 15px 20px 15px 40px;
+            width: 540px;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my first container.</h1>
+        <p>This is my first paragraph.</p>
+    </div>
+    <div class="container">
+        <h1>This is my second container.</h1>
+        <p>This is my second paragraph.</p>
+    </div>
+
+</body>
+
+</html>
