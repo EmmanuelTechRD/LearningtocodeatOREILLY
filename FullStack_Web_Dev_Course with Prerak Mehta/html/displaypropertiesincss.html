@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Resources/monitor.png" type="image/x-icon">
+    <title>Display properties in CSS</title>
+    <style>
+        /* Stylizing global fonts. */
+        *{
+            font-size: 17px;
+        }
+
+        /* Changing the properties of a block element. */
+        .test1{
+            background-color: aqua;
+            /* width: 500px; */
+            padding: 8px;
+            margin: 20px;
+            border-radius: 8px;
+
+        }
+
+        /* Changing the properties of an inline element. */
+        .test2{
+            background-color: burlywood;
+            padding: 8px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        /* Using the inline-block property. */
+        .displayInlineBlock{
+            display: inline-block;
+            background-color: burlywood;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100px;
+            margin: 5px;
+        }
+
+        /* Stylizing <a> links. */
+        .anchorLinks{
+            text-decoration: none;
+            background-color: burlywood;
+            color: black;
+            padding: 8px 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: all 0.6s ease-out;
+        }
+
+        .anchorLinks:hover{
+            background-color: black;
+            color: burlywood;
+            transition: all 0.2s ease-in;
+        }
+
+        /* Stylinizing container of <a> links. */
+        .goIndex{
+            margin: auto;
+            margin-top: 30px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The paragraph is an example of a block element. -->
+    <p class="test1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!-- The span is an example of an inline element. -->
+    <span class="test2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+    <span class="test2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+
+    <!-- Elements altered with the "Display: inline-block;" property. -->
+    <p class="displayInlineBlock">This is normally a block element.</p>
+    <span class="displayInlineBlock">This is normally an inline element.</span>
+
+    <hr>
+    <!-- Link to the main "Index" page -->
+    <div class="goIndex">
+        <a href="/FullStack_Web_Dev_Course with Prerak Mehta/html/index.html" target="_blank" class="anchorLinks">Go back to the main page.</a>
+    </div>
+
+</body>
+
+</html>
