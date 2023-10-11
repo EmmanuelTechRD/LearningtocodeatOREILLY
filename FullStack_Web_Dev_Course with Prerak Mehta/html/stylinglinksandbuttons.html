@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Resources/link.png" type="image/x-icon">
+    <title>Styling links and buttons</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *{
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        .container{
+            width: 350px;
+            margin: auto;
+            padding: 10px;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+
+        .container a{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 1px 5px;
+        }
+
+        .container a:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .container a:visited{
+            color: purple;
+        }
+
+        .btn{
+            border-radius: 5px;
+        }
+        
+        .btn:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .btn:active{
+            background-color: darkblue;
+            color: white;
+        }
+
+        .a_links{
+            text-decoration: none;
+            color: black;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 8px;
+            transition: all 0.3s ease-out;
+        }
+
+        .a_links:hover{
+            transition: all 0.5s ease-in;
+            color: burlywood;
+            background-color: black;
+        }
+
+        .anchorContainer{
+            margin: 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minus, consectetur dolore aliquam earum illum eaque nihil rerum, perspiciatis inventore aspernatur veritatis? Ducimus et perspiciatis, voluptatum eum quas molestias voluptatem. Odit, sunt? Harum, vel et!</p>
+        <a href="https://www.ebay.com" target="_blank">Click here.</a>
+        <button class="btn">Submit</button>
+    </div>
+
+    <br>
+    <hr>
+    <!-- Link to the main "Index" page -->
+    <div class="anchorContainer">
+        <a href="/FullStack_Web_Dev_Course with Prerak Mehta/html/index.html" target="_blank" class="a_links">Go back to the main page.</a>
+    </div>
+    
+</body>
+
+</html>
