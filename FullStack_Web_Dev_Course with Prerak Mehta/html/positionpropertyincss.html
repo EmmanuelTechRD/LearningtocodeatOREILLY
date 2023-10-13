@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property in CSS</title>
+    <style>
+        /* Stylizing the container. */
+        .container{
+            border: 5px solid aquamarine;
+            background-color: burlywood;
+            /* display: inline-block; */
+            height: 1000px;
+        }
+
+        /* Stylizing the boxes. */
+        .box{
+            border: 2px solid black;
+            font-size: 20px;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        
+        /* Looking at the difference between the position values. */
+        #box1{
+            position: relative; /* Situates the element in a position relative to its parent container. */
+            top: 123px;
+            left: 50px;
+        }
+        #box2{
+            position: absolute; /* Situates the element in a unique position in reference with its parent container. */
+            top: 250px;
+            left: 250px;
+        }
+        #box3{
+            position: fixed; /* Situates the element in an active/constant position that adapts alongside with the user scrolling. */
+            right: 10px;
+            bottom: 10px;
+        }
+        #box4{
+            position: sticky; /* Similar to the "fixed-position" this one is usually used in the top navigation bar of websites. */
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Creating a master <div> container for the demo of the lecture. -->
+    <div class="container">
+        <div class="box" id="box1">This is the box 1</div>
+        <div class="box" id="box2">This is the box 2</div>
+        <div class="box" id="box3">This is the box 3</div>
+        <div class="box" id="box4">This is the box 4</div>
+    </div>
+
+</body>
+
+</html>
