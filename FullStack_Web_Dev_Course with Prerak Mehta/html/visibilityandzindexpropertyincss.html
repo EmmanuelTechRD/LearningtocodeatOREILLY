@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index property in CSS</title>
+    <style>
+        /* Class for the style of the boxes. */
+        .box {
+            width: 200px;
+            height: 120px;
+            position: relative;
+            /* display: inline-block; */
+        }
+
+        /* Stylizing the boxes individually with ID's. */
+        #red {
+            background-color: red;
+            /* display: none; If you want to disappear an element without leaving any blank space, you should use this property. */
+            z-index: 2;
+        }
+
+        #green {
+            background-color: green;
+            /* visibility: hidden; If you want to disappear an element and leave a blank space in its position, use this property. */
+            position: relative;
+            top: -120px;
+            left: 55px;
+            z-index: 0;
+        }
+
+        #blue {
+            background-color: blue;
+            position: relative; /* The position-relative property is usually used for the Z-Index effect. */
+            top: -150px;
+            left: 120px;
+            z-index: 1;
+        }
+
+        /* Class for the style of the sub-box/es over the boxes. */
+        .subBoxes{
+            width: 50px;
+            height: 60px;
+            left: 128px;
+            top: 40px;
+            position: relative;
+            z-index: 3;
+            border: 2px solid black;
+        }
+
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Boxes for the demostration of the lecture. -->
+    <div class="box" id="red"></div>
+        <div class="subBoxes" id="yellow"></div>
+    <div class="box" id="green"></div>
+    <div class="box" id="blue"></div>
+
+</body>
+
+</html>
