@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Flexbox Concept in CSS</title>
+    <style>
+        /* Stylizing the <div> main container and putting into practice the Flexbox Concept. */
+        .container{
+            height: 100vh; /* The vh = viewport height measure, is an equivalent height to the particular size of the user screen. */
+            border: 2px solid red;
+            display: flex; /* Property to set in order to apply the flexbox concept. */
+            /* flex-direction: column; */ /* Organizes the elements inside the container in a row or column style. */
+            /* justify-content: center;
+            align-items: flex-end; */ /* Aligns all the elements inside the container in an X and Y axis. */
+            /* flex-wrap: wrap; */ /* Organizes the elements in a wrap style according to the screen size. */
+        }
+
+        /* Stylizing the items for the demonstration of the lecture. */
+        .items{
+            background-color: burlywood;
+            font-size: 20px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        #box1{
+            order: 4; /* Specifies the position of an element in reference to the other boxes. */
+            flex-grow: 2; /* Specifies the growth of an element in reference to the other boxes */
+            flex-shrink: 2; /* Specifies the shrink size of a particular element in reference to the other ones. */
+        }
+
+        #box2{
+            order: 3;
+            flex-grow: 1;
+            align-self: center; /* Aligns a particular element in a Y-Axis. */
+        }
+
+        #box3{
+            order: 2;
+            flex-grow: 1;
+        }
+
+        #box4{
+            order: 1;
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: center;
+        }
+
+        /* Stylizing a second container created for practice purposes. */
+        .secondContainer{
+            height: 50vh;
+            border: 2px solid green;
+            display: flex;
+            /* flex-wrap: wrap; */
+            margin-top: 30px;
+        }
+
+        #box5{
+            flex-grow: 1;
+        }
+
+        #box6{
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: center;
+        }
+
+        #box7{
+            flex-grow: 1;
+        }
+
+        #box8{
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main <div> container with the demonstrative items for the lecture. -->
+    <div class="container">
+        <div class="items" id="box1">Box-1</div>
+        <div class="items" id="box2">Box-2</div>
+        <div class="items" id="box3">Box-3</div>
+        <div class="items" id="box4">Box-4</div>
+    </div>
+
+    <!-- Self-exercise to practice what I've learned so far. -->
+    <div class="secondContainer">
+        <div class="items" id="box5">Box-5</div>
+        <div class="items" id="box6">Box-6</div>
+        <div class="items" id="box7">Box-7</div>
+        <div class="items" id="box8">Box-8</div>
+    </div>
+
+</body>
+
+<!-- Emmanuel Soto Code (Linkedin: "https://do.linkedin.com/in/emmanuel-soto-317b1a221") <br>
+    - Learning from the FullStack_Web_Dev_Course with Prerak Mehta in OREILLY's platform. -->
+</html>
