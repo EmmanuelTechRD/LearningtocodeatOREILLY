@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing and Units in CSS</title>
+    <style>
+        .container {
+            font-size: 25px;
+            border: 2px solid black;
+            height: 100vh; /* Sets the height-size of the user screen that you want your content to cover. */
+            /* width: 100vw; */ /* Sets the width-size of the user screen that you want your content to cover. */
+        }
+
+        #frontend {
+            font-size: 2em; /* The em unit doubles the original size of an element in reference with the font-size of its parent element. */
+        }
+
+        #backend {
+            font-size: 2rem; /* The rem unit doubles the size of an element in reference with its root-element size. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="frontend">This will be my paragraph.</p>
+        <p id="backend">This will be my paragraph.</p>
+        <p id="fullstack">This will be my paragraph.</p>
+    </div>
+
+</body>
+
+</html>
