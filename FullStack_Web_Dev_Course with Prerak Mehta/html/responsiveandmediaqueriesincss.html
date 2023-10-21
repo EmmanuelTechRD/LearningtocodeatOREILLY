@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive and Media Queries in CSS</title>
+    <style>
+        /* Stylizing the class. */
+        .container {
+            border: 2px solid black;
+            display: none;
+        }
+
+        /* Working with media queries; these makes responsiveness possible across devices. */
+        @media only screen and (max-width: 426px) {
+
+            /* This media query sets a maximum width within which certain content will be shown (Smartphone content). */
+            #box1 {
+                display: block;
+                background-color: aquamarine;
+                font-size: 2em;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 427px) and (max-width: 768px) {
+
+            /* This media query sets a minimum and maximum width within which certain content will be shown (Tablet content). */
+            #box2 {
+                display: block;
+                background-color: burlywood;
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1440px) {
+
+            /* This media query sets a minimum and maximum width within which certain content will be shown (Laptop content). */
+            #box3 {
+                display: block;
+                background-color: gray;
+                color: white;
+                font-size: 4em;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 1441px) and (max-width: 2560px) {
+
+            /* This media query sets a minimum and maximum width within which certain content will be shown (Ultra Wide Monitor content). */
+            #box4 {
+                display: block;
+                background-color: brown;
+                color: white;
+                font-size: 5em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Containers for demonstration of the lecture. -->
+    <div class="container" id="box1">This is content for a Smartphone.</div>
+    <div class="container" id="box2">This is content for a Tablet.</div>
+    <div class="container" id="box3">This is content for a Laptop.</div>
+    <div class="container" id="box4">This is content for an Ultra Wide Monitor.</div>
+
+</body>
+
+</html>
