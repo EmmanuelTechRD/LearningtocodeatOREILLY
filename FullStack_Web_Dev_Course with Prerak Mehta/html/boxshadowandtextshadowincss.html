@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow in CSS</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            background-color: blanchedalmond;
+            margin: 20px 10px;
+            padding: 20px 20px;
+        }
+
+        #box1{
+            /* Property used to stylish boxes with shadows: */
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 10px 13px 10px 0px rgb(155, 18, 18);
+        }
+
+        #box2{
+            /* Property used to stylish text with shadows: */
+            /* offset-x | offset-y | color */
+            text-shadow: 2px 2px rgb(255, 234, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Estructure created for the demostration of the lecture. -->
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores iusto incidunt maiores eum natus.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box2">
+            <h2>JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus maiores adipisci assumenda accusamus molestias magnam!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box3">
+            <h2>Python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus maiores adipisci assumenda accusamus molestias magnam!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
