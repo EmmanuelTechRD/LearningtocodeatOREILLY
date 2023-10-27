@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom properties and variables</title>
+    <style>
+        /* Declaring custom properties and variables inside the global element (root). */
+        :root {
+            --brandWhite: #eaeaea;
+            --brandMainColor: #121faf;
+            --brandSecondColor: #b4c100;
+        }
+
+        .container {
+            /* Making use of a variable to add a background color. */
+            background-color: var(--brandMainColor);
+            color: var(--brandWhite);
+        }
+
+        span {
+            color: var(--brandSecondColor);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The properties have been applied to these body elements. -->
+    <div class="container">
+        <h1>Web Development Languages:</h1>
+    </div>
+    <div class="container">
+        <h2>JavaScript</h2>
+    </div>
+    <div class="container">
+        <h2>Python</h2>
+    </div>
+    <span>PHP</span>
+
+</body>
+
+</html>
