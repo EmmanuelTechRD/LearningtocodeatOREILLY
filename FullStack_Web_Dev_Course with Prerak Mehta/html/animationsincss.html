@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        .container {
+            width: 250px;
+            height: 250px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            /* Properties used to add the "@keyframes loading" animation to the container class: */
+            animation-name: loading;
+            animation-duration: 7s;
+        }
+
+        /* "@keyframes loading" animation: */
+        @keyframes loading {
+
+            /* Simple start to end animation: */
+            /* from {
+                background-color: burlywood;
+            }
+
+            to {
+                background-color: blanchedalmond;
+            } */
+            
+            /* By stages animation: */
+            0% {
+                background-color: burlywood;
+            }
+
+            25% {
+                background-color: antiquewhite;
+            }
+
+            50% {
+                background-color: aquamarine;
+            }
+
+            75% {
+                background-color: bisque;
+            }
+
+            100% {
+                background-color: blanchedalmond;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Adding a title and a div container to try what I've learned so far... -->
+    <h1>Animations in CSS</h1>
+    <div class="container"></div>
+
+</body>
+
+</html>
