@@ -9,11 +9,19 @@
         .container {
             width: 250px;
             height: 250px;
+            /* It's important to add the position relative property in order to move the element with the help of animation: */
+            position: relative;
             background-color: blanchedalmond;
             border: 2px solid black;
             /* Properties used to add the "@keyframes loading" animation to the container class: */
-            animation-name: loading;
-            animation-duration: 7s;
+            /* animation-name: loading; */
+            /* animation-duration: 4.5s; */
+            /* animation-delay: 3s; */
+            /* animation-iteration-count: 2; */
+            /* animation-direction: alternate; */
+            /* animation-timing-function: ease; */
+            /* animation-fill-mode: forwards; */
+            animation: loading 3.5s alternate ease 2s 3 both;
         }
 
         /* "@keyframes loading" animation: */
@@ -27,25 +35,30 @@
             to {
                 background-color: blanchedalmond;
             } */
-            
+
             /* By stages animation: */
             0% {
-                background-color: burlywood;
+                top: 0px;
+                background-color: blanchedalmond;
             }
 
             25% {
-                background-color: antiquewhite;
+                /* top: 25px; */
+                background-color: rgb(255, 242, 0);
             }
 
             50% {
-                background-color: aquamarine;
+                /* top: 50px; */
+                background-color: rgb(0, 255, 17);
             }
 
             75% {
-                background-color: bisque;
+                /* top: 75px; */
+                background-color: rgb(0, 30, 255);
             }
 
             100% {
+                top: 100px;
                 background-color: blanchedalmond;
             }
         }
