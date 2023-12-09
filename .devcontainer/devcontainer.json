@@ -1,0 +1,17 @@
+{
+    // My FullStack base configuration
+    "name": "Codespace for FullStack Coding",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "formulahendry.auto-rename-tag",
+                "ms-vscode.live-server",
+                "pkief.material-icon-theme",
+                "esbenp.prettier-vscode",
+                "ms-python.python",
+                "bradlc.vscode-tailwindcss"
+            ]
+        }
+    }
+}
