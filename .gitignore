@@ -1,0 +1,8 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/FullStack_Web_Dev_Course with Prerak Mehta/nodeJS/node_modules
+/FullStack_Web_Dev_Course with Prerak Mehta/nodeJS/package-lock.json
+/FullStack_Web_Dev_Course with Prerak Mehta/nodeJS/package.json
+/FullStack_Web_Dev_Course with Prerak Mehta/nodeJS/postcss.config.js
+/FullStack_Web_Dev_Course with Prerak Mehta/nodeJS/tailwind.config.js
